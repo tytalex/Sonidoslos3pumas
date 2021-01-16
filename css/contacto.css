@@ -1,0 +1,97 @@
+
+.contact-information{
+padding: 10px;
+padding-top: 0;
+margin-bottom: 30px;
+border-bottom: 1px solid #DE423A;  /*---Color del parentesis que separa el texto /abajo esta el principal |---*/
+}
+.contact-information .column__title{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 100;
+    
+}
+.contact-information[class*="icon-"]{
+    font-size: 1.3em;
+    margin-right: 7px;
+    position: relative;
+    top: 5px;
+
+}
+.contact-information .social-icon{
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.contact-information .social-icon[class*="icon-"]{
+    background: black;
+    color: white;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.formulario{
+    padding: 10px;
+    padding-top: 0;
+}
+.formulario__label, .formulario__input-txt, .formulario__textarea{
+    display: block;
+    width: 100%;
+}
+.formulario__input-txt{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.formulario__textarea{
+    min-height: 50px;  /*-----minimo de altura*/
+    min-width: 100%;    /*-----minimo de ancho*/
+    max-width: 100%;   /*-----maximo de ancho*/
+    max-height: 100px; /*-----maximo de altura*/
+}
+.btn1{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #DE423A;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+.formulario__btn{
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+   
+   
+}
+
+
+
+
+@media screen and (min-width:480px){
+    .contact .container--flex{
+        align-items: flex-start;
+    }
+    .contact-information p{
+        font-size: .75em;
+    }
+    .contact-information{
+        border-right: 1px solid #DE423A;  /*---Color del parentesis que separa el texto /principal|---*/
+        border-bottom: none;
+       text-align: center;
+       height: 350px;
+    }
+    
+}
+@media screen and (min-width:768px){
+    .contact-information p{  /*---cambia el tamaño del parrafo |---*/
+        font-size: 1.4em;
+        text-align: justify;
+    
+    }
+    .contact-information .column__title{
+        font-size: 2.5em;
+        color:  rgb(56, 13, 211);/*---Color del text center azul |---*/
+    }
+}
+
+
